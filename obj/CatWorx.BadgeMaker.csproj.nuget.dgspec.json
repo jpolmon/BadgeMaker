@@ -14,11 +14,15 @@
         "outputPath": "C:\\Users\\jopo1\\repos\\cat-worx\\CatWorx.BadgeMaker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "C:\\Users\\jopo1\\repos\\cat-worx\\CatWorx.BadgeMaker\\NuGet.Config",
           "C:\\Users\\jopo1\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
@@ -34,6 +38,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Win32.SystemEvents": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
