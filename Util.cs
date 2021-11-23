@@ -34,13 +34,13 @@ namespace CatWorx.BadgeMaker
 
         }
 
-        public static void MakeBadges(List<Employee> employees)
+        public static void MakeBadges(List<Employee> employees, string companyName)
         {
             // Layout variables
             int BADGE_WIDTH = 669;
             int BADGE_HEIGHT = 1044;
 
-            int COMPANY_NAME_START_X = 0;
+            int COMPANY_NAME_START_X = 50;
             int COMPANY_NAME_START_Y = 110;
             int COMPANY_NAME_WIDTH = 100;
 
@@ -82,7 +82,7 @@ namespace CatWorx.BadgeMaker
 
                     // Adding company name
                     canvas.DrawString(
-                        employees[i].GetCompanyName(), 
+                        companyName, 
                         font, 
                         new SolidBrush(Color.White),
                         new Rectangle(
