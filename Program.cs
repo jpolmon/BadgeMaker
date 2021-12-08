@@ -7,7 +7,7 @@ namespace CatWorx.BadgeMaker
   {
     static void Main(string[] args)
     {
-      string company = "";
+      string? company = "";
       do 
       {
         Console.WriteLine("What is your company's name? [cannot be blank]");
@@ -15,7 +15,7 @@ namespace CatWorx.BadgeMaker
       } while (company == "");
 
       List<Employee> employees = new List<Employee>();
-      string response = ""; 
+      string? response = ""; 
       do 
       {
         Console.WriteLine("Would you like to auto-generate employee information? [y/n]");
